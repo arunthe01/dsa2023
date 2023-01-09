@@ -13,13 +13,7 @@ bool pal(string s, int l, int r){
 		return true;
 	}
 	
-	if(pal(s,l+1,r-1)){
-		return true;
-	}
-	
-	else{
-		return false;
-	}	
+	return pal(s,l+1,r-1);
 }
 
 int main(){
